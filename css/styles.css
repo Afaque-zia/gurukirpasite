@@ -2310,7 +2310,7 @@ label {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -7921,10 +7921,13 @@ label {
 }
 
 .fixed-header {
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 46px;
+  max-width: 97% !important;
+  margin: 10px auto;
 }
 
 .fixed-cate-single {
@@ -9530,8 +9533,8 @@ label {
 
 .flat-header-wrapper-about .desc {
   margin-top: 30px;
-  font-size: 24px;
-  line-height: 33.6px;
+  font-size: 17px;
+  line-height: 20.6px;
 }
 
 .flat-header-wrapper-about .signature-box {
